@@ -8,6 +8,20 @@
   --lime: #d6df83;
   --blue: #86b9c7;
   --navy-soft: #263d5a;
+  --surface: #ffffff;
+}
+
+:root[data-theme="dark"] {
+  --ink: #edf2f7;
+  --paper: #111927;
+  --white: #ffffff;
+  --muted: #aeb8c7;
+  --line: #2b3748;
+  --coral: #f29a7c;
+  --lime: #d6df83;
+  --blue: #86b9c7;
+  --navy-soft: #263d5a;
+  --surface: #172236;
 }
 
 * {
@@ -23,6 +37,7 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
   color: var(--ink);
   background: var(--paper);
+  transition: color .25s ease, background-color .25s ease;
 }
 
 a {
@@ -90,6 +105,34 @@ footer {
 .header-button:hover {
   color: var(--white);
   background: var(--ink);
+}
+
+.header-actions {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.theme-toggle {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  color: var(--ink);
+  background: transparent;
+  font-size: 17px;
+  cursor: pointer;
+  transition: color .2s ease, border-color .2s ease, background .2s ease, transform .2s ease;
+}
+
+.theme-toggle:hover {
+  color: var(--paper);
+  border-color: var(--ink);
+  background: var(--ink);
+  transform: rotate(-12deg);
 }
 
 .hero {
@@ -972,4 +1015,39 @@ footer p {
   .project-card:hover .project-info > a {
     transform: none;
   }
+}
+
+:root[data-theme="dark"] .portrait-backdrop,
+:root[data-theme="dark"] .portrait-card {
+  background: #1d2a3d;
+}
+
+:root[data-theme="dark"] .portrait-backdrop::before,
+:root[data-theme="dark"] .portrait-backdrop::after {
+  border-color: rgba(174, 184, 199, .12);
+}
+
+:root[data-theme="dark"] .profile-interests p {
+  background: var(--surface);
+}
+
+:root[data-theme="dark"] .contact-section {
+  background: #1b2738;
+}
+
+:root[data-theme="dark"] .primary-button {
+  color: #17263b;
+  background: var(--lime);
+}
+
+:root[data-theme="dark"] .primary-button:hover,
+:root[data-theme="dark"] .header-button:hover,
+:root[data-theme="dark"] .theme-toggle:hover {
+  color: #17263b;
+  border-color: var(--lime);
+  background: var(--lime);
+}
+
+:root[data-theme="dark"] .project-card:hover .project-visual {
+  box-shadow: 0 18px 36px rgba(0, 0, 0, .35);
 }
