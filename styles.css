@@ -658,6 +658,33 @@ h2 em {
   margin-bottom: 18px;
 }
 
+.profile-interests {
+  display: grid;
+  gap: 8px;
+  margin: 22px 0 8px;
+}
+
+.profile-interests p {
+  display: grid;
+  grid-template-columns: 82px 1fr;
+  margin: 0;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, .55);
+}
+
+.profile-interests strong {
+  color: var(--ink);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.profile-interests span {
+  color: #62615b;
+}
+
 .about-copy .text-link {
   display: inline-block;
   margin-top: 10px;
