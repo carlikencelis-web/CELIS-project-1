@@ -240,123 +240,15 @@ h2 em {
   bottom: 0;
   overflow: hidden;
   border-radius: 170px 170px 8px 8px;
-  background: linear-gradient(145deg, #d4cdc2 0%, #e9e3d8 60%, #c9c1b2 100%);
+  background: #dfe5df;
 }
 
-.portrait-face {
+.profile-photo {
   position: absolute;
-  z-index: 2;
-  width: 205px;
-  height: 290px;
-  top: 55px;
-  left: 68px;
-}
-
-.face {
-  position: absolute;
-  z-index: 3;
-  width: 160px;
-  height: 205px;
-  left: 22px;
-  top: 22px;
-  border-radius: 48% 48% 44% 44%;
-  background: #bd8468;
-  box-shadow: inset -12px -8px 0 rgba(104, 62, 46, .08);
-}
-
-.hair {
-  position: absolute;
-  z-index: 5;
-  width: 205px;
-  height: 140px;
-  top: -18px;
-  left: 0;
-  border-radius: 100px 100px 45px 45px;
-  background: #252421;
-  clip-path: polygon(0 22%, 10% 4%, 26% 0, 43% 7%, 58% 1%, 78% 8%, 100% 28%, 92% 63%, 76% 48%, 64% 31%, 42% 30%, 25% 41%, 8% 68%);
-}
-
-.ear {
-  position: absolute;
-  z-index: 2;
-  width: 38px;
-  height: 58px;
-  top: 112px;
-  border-radius: 50%;
-  background: #b77b61;
-}
-
-.left-ear { left: 5px; }
-.right-ear { right: 5px; }
-
-.neck {
-  position: absolute;
-  z-index: 1;
-  width: 92px;
-  height: 95px;
-  left: 57px;
-  top: 180px;
-  background: #b77b61;
-}
-
-.brow,
-.eye,
-.nose,
-.mouth {
-  position: absolute;
-  display: block;
-}
-
-.brow {
-  width: 38px;
-  height: 7px;
-  top: 72px;
-  border-top: 4px solid #3e3029;
-  border-radius: 50%;
-}
-
-.brow-left { left: 25px; transform: rotate(-4deg); }
-.brow-right { right: 25px; transform: rotate(4deg); }
-
-.eye {
-  width: 7px;
-  height: 7px;
-  top: 87px;
-  border-radius: 50%;
-  background: #2c2724;
-}
-
-.eye-left { left: 42px; }
-.eye-right { right: 42px; }
-
-.nose {
-  width: 12px;
-  height: 36px;
-  left: 74px;
-  top: 98px;
-  border-right: 2px solid #95624f;
-  border-bottom: 2px solid #95624f;
-  border-radius: 0 0 8px 0;
-}
-
-.mouth {
-  width: 42px;
-  height: 14px;
-  left: 59px;
-  top: 153px;
-  border-bottom: 3px solid #75483b;
-  border-radius: 50%;
-}
-
-.portrait-shirt {
-  position: absolute;
-  z-index: 1;
-  width: 290px;
-  height: 155px;
-  left: 25px;
-  bottom: -45px;
-  border-radius: 100px 100px 20px 20px;
-  background: #7f9b9a;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 28%;
 }
 
 .experience-badge {
