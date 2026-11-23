@@ -1,12 +1,13 @@
 :root {
-  --ink: #171716;
-  --paper: #f8f7f3;
+  --ink: #17263b;
+  --paper: #f7f4ec;
   --white: #ffffff;
-  --muted: #77766f;
-  --line: #dfded7;
-  --coral: #ef7358;
-  --lime: #d9df72;
-  --blue: #83b7c8;
+  --muted: #697386;
+  --line: #ddd9cd;
+  --coral: #e07859;
+  --lime: #d6df83;
+  --blue: #86b9c7;
+  --navy-soft: #263d5a;
 }
 
 * {
@@ -19,7 +20,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   color: var(--ink);
   background: var(--paper);
 }
@@ -48,7 +49,7 @@ footer {
 }
 
 .logo {
-  font-family: "Manrope", sans-serif;
+  font-family: "Syne", sans-serif;
   font-size: 25px;
   font-weight: 800;
   letter-spacing: -2px;
@@ -124,8 +125,8 @@ footer {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #75a96a;
-  box-shadow: 0 0 0 4px #e3eadc;
+  background: #738f65;
+  box-shadow: 0 0 0 4px #e7ebde;
 }
 
 h1,
@@ -137,8 +138,8 @@ p {
 
 h1,
 h2 {
-  font-family: "Manrope", sans-serif;
-  letter-spacing: -3.5px;
+  font-family: "Syne", sans-serif;
+  letter-spacing: -4px;
 }
 
 h1 {
@@ -151,14 +152,14 @@ h1 {
 h1 em,
 h2 em {
   color: var(--coral);
-  font-family: Georgia, serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 400;
 }
 
 .hero-description {
   max-width: 470px;
   margin-bottom: 32px;
-  color: #62615b;
+  color: var(--muted);
   font-size: 17px;
   line-height: 1.65;
 }
@@ -276,7 +277,7 @@ h2 em {
 }
 
 .experience-badge strong {
-  font-family: "Manrope", sans-serif;
+  font-family: "Syne", sans-serif;
   font-size: 31px;
   line-height: 1;
 }
@@ -369,7 +370,7 @@ h2 em {
 
 .project-info h3 {
   margin-bottom: 0;
-  font-family: "Manrope", sans-serif;
+  font-family: "Syne", sans-serif;
   font-size: 20px;
   letter-spacing: -.7px;
 }
@@ -616,7 +617,7 @@ h2 em {
   border: 1px solid #8a9670;
   color: #59633c;
   background: #f4efdc;
-  font-family: Georgia, serif;
+  font-family: "Syne", sans-serif;
   font-size: 9px;
   letter-spacing: 2px;
 }
@@ -655,7 +656,7 @@ h2 em {
 
 .about-copy {
   padding-top: 12px;
-  color: #62615b;
+  color: var(--muted);
   font-size: 15px;
   line-height: 1.75;
 }
@@ -688,7 +689,7 @@ h2 em {
 }
 
 .profile-interests span {
-  color: #62615b;
+  color: var(--muted);
 }
 
 .about-copy .text-link {
@@ -705,7 +706,7 @@ h2 em {
   justify-content: center;
   margin: 0 auto 36px;
   border-radius: 8px;
-  background: #e9e7df;
+  background: #e9edf1;
   text-align: center;
 }
 
